@@ -1,0 +1,11 @@
+/*Please add; after each select statement*/
+CREATE PROCEDURE projectList()
+BEGIN
+	ALTER TABLE Projects
+    DROP COLUMN internal_id;
+
+    ALTER TABLE Projects
+    DROP COLUMN team_size;
+
+    SELECT * FROM Projects;
+END
